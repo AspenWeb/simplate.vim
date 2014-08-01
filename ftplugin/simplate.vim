@@ -10,7 +10,7 @@ set cpo&vim
 
 syntax on
 syntax include @Python syntax/python.vim
-syntax region pythonCode keepend start=/\%^/ end=/^\[----*\]/re=s-1,he=s-1 contains=@Python
+syntax region pythonCode keepend start=/\%^/ end=/^\[----*\]/re=s-1,he=s-1,me=s-1 contains=@Python
 syntax region pythonCode keepend start=/^\[----*\]\s*$/rs=e+1,hs=e+1 end=/^\[----*\]/re=s-1,he=s-1 contains=@Python
 
 " ------------------------------------------------------------------------------
